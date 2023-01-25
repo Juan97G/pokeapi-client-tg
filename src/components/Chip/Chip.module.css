@@ -1,0 +1,13 @@
+.container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 5px;
+}
+
+.container span {
+   padding: 4px 7px;
+   color: var(--white);
+   font-size: 0.7rem;
+   border-radius: 4px;
+   text-transform: capitalize;
+}

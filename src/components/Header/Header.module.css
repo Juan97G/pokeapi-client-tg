@@ -1,0 +1,13 @@
+.container {
+   background-color: var(--color-primary);
+   border: none;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.container h1 {
+   font-size: 1.6rem;
+   color: var(--white);
+}
