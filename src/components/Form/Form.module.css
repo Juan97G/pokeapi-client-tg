@@ -52,3 +52,17 @@
    background-color: var(--color-secondary);
    color: var(--white);
 }
+
+
+@media screen and (min-width: 992px) {
+   .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .formSearch {
+      width: 100%;
+      padding: 0 60px;
+   }
+}
