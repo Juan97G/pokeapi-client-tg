@@ -28,7 +28,7 @@ const Form = () => {
    }
 
    return (
-      <div className={styles.container}>
+      <div className={`${styles.container} animate__animated animate__fadeInUpBig`} >
          <form className={styles.formSearch} onSubmit={handleSubmit}>
             <input
                type="text"
