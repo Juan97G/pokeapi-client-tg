@@ -4,6 +4,7 @@ import Chip from "../Chip";
 import PokemonContext from "../../context/pokemon/pokemonContext";
 import axios from "axios";
 import toast from "react-hot-toast";
+import 'animate.css';
 
 
 const CardInformation = () => {
@@ -21,7 +22,7 @@ const CardInformation = () => {
    }
 
    return (
-      <div className={styles.container}>
+      <div className={`${styles.container} animate__animated animate__fadeInDownBig`}>
          {
             Object.entries(pokemonInfo).length === 0
             ? (
