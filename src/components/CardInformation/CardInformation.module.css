@@ -44,7 +44,7 @@
    border: none;
    border-radius: 18px 18px 8px 8px;
    margin-top: -15px;
-   padding-top: 50px;
+   padding: 50px 0 25px;
 }
 
 .informationDetailOne {
@@ -71,4 +71,22 @@
 
 .informationDetailTwo:last-of-type {
    border-radius: 0 0 8px 8px;
+}
+
+.contButton {
+   width: 70%;
+   margin: 20px auto 0;
+}
+
+.contButton button {
+   width: 100%;
+   padding: 6px;
+   border: none;
+   border-radius: 5px;
+   font-size: 0.8rem;
+   font-weight: 600;
+   letter-spacing: 1px;
+   color: var(--white);
+   background-color: var(--color-secondary);
+   cursor: pointer;
 }
