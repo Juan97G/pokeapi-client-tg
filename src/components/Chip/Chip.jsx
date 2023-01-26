@@ -11,7 +11,7 @@ const Chip = (props) => {
 
    useEffect(() => {
       loadDataChips();
-   }, []);
+   }, [data]);
 
 
    /* FUNCTIONS */
