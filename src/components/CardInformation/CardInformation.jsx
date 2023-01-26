@@ -2,6 +2,8 @@ import React, {useContext} from 'react';
 import styles from "./CardInformation.module.css";
 import Chip from "../Chip";
 import PokemonContext from "../../context/pokemon/pokemonContext";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 
 const CardInformation = () => {
@@ -9,6 +11,14 @@ const CardInformation = () => {
    /* HOOKS */
    const pokeContext = useContext(PokemonContext);
    const {pokemonInfo} = pokeContext;
+
+   /* FUNCTIONS */
+   const savePokemon = async () => {
+      const response = await axios.post("http://localhost:4000/api/pokemon", pokemonInfo);
+
+      if(response.status === 201) toast.success(response.data.msg);
+      if(response.status !== 201) toast.error(response.data.msg);
+   }
 
    return (
       <div className={styles.container}>
@@ -50,6 +60,11 @@ const CardInformation = () => {
                            type="move"
                            color="#D82148"
                         />
+                     </div>
+                     <div className={styles.contButton}>
+                        <button type="submit" onClick={() => savePokemon()}>
+                           SAVE IN DATABASE
+                        </button>
                      </div>
                   </div>
                </>
